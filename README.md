@@ -20,7 +20,6 @@ API REST desenvolvida em Python com **FastAPI** e **SQLAlchemy** para gerenciame
 
 A aplicação foi organizada seguindo a separação em camadas para garantir baixo acoplamento e facilidade de manutenção:
 
-.
 ├── app/
 │   ├── api/             # Camada de Entrada / Rotas (Endpoints HTTP)
 │   ├── domain/          # Modelos do Banco de Dados (SQLAlchemy)
