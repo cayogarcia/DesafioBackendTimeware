@@ -1,4 +1,4 @@
--- DDL: Criação das tabelas
+
 CREATE TABLE IF NOT EXISTS clientes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nome VARCHAR(100) NOT NULL,
