@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, ConfigDict, EmailStr
 
 
 class ClienteBase(BaseModel):
@@ -14,10 +14,7 @@ class ClienteCreate(ClienteBase):
 class ClienteResponse(ClienteBase):
     id: int
     criado_em: datetime
-
-    class Config:
-        from_attributes = True
-
+    model_config = ConfigDict(from_attributes=True)
 
 class PedidoBase(BaseModel):
     descricao: str
@@ -32,6 +29,4 @@ class PedidoResponse(PedidoBase):
     id: int
     cliente_id: int
     criado_em: datetime
-
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
