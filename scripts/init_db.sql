@@ -15,6 +15,5 @@ CREATE TABLE IF NOT EXISTS pedidos (
     FOREIGN KEY (cliente_id) REFERENCES clientes(id)
 );
 
--- DML: Inserção de dados de teste
 INSERT INTO clientes (nome, email) VALUES ('João Silva', 'joao@email.com');
 INSERT INTO pedidos (cliente_id, descricao, valor_total) VALUES (1, 'Notebook Dell', 4500.00);
