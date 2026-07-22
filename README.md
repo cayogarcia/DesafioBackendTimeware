@@ -21,17 +21,17 @@ API REST desenvolvida em Python com **FastAPI** e **SQLAlchemy** para gerenciame
 A aplicação foi organizada seguindo a separação em camadas para garantir baixo acoplamento e facilidade de manutenção:
 
 ├── app/
-│   ├── api/             # Camada de Entrada / Rotas (Endpoints HTTP)
-│   ├── domain/          # Modelos do Banco de Dados (SQLAlchemy)
-│   ├── repositories/    # Persistência de Dados (ORM vs SQL Puro)
-│   ├── schemas/         # DTOs e Validações de Entrada/Saída (Pydantic)
-│   └── services/        # Regras de Negócio e Casos de Uso
-├── scripts/             # Scripts DDL e DML em SQL Puro
-├── tests/               # Testes Unitários e de Integração (Pytest)
-├── .github/workflows/   # Pipeline de CI/CD (GitHub Actions)
-├── pytest.ini           # Configurações de execução do Pytest
-├── requirements.txt     # Dependências do Projeto
-└── main.py              # Ponto de entrada da aplicação
+│   ├── api/
+│   ├── domain/
+│   ├── repositories/
+│   ├── schemas/
+│   └── services/
+├── scripts/
+├── tests/
+├── .github/workflows/
+├── pytest.ini
+├── requirements.txt
+└── main.py
 
 ---
 
