@@ -43,14 +43,17 @@ A aplicação foi organizada seguindo a separação em camadas para garantir bai
 
 ### 1. Clonar o repositório
 git clone https://github.com/cayogarcia/DesafioBackendTimeware.git
+
 cd DesafioBackendTimeware
 
 ### 2. Criar e ativar o ambiente virtual
 * Windows (PowerShell):
+  
   python -m venv venv
   .\venv\Scripts\Activate.ps1
 
 * Linux / macOS:
+  
   python3 -m venv venv
   source venv/bin/activate
 
